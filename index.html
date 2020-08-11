@@ -5,40 +5,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/google.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
-<body class="container">
-    <header>
-        <nav>
-            <ul> 
-            <li><a href="">About</a></li>
-            <li><a href="">Store</a></li>
-            </ul> 
-            <ul>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href="" title="Google apps" src="http://127.0.0.1:5501/google-apps.png" aria-expanded="false" role="button" tabindex="0"><img alt="google apps" ></a></li>
-            </ul>
+<body class="container-fluid">
+    <header class="links">
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="row">
+               
+                    <ul> 
+                        <div class="col-md-1"><li><a class="links" href="">About</a></li></div>
+                        <div class="col-md-1"><li><a class="links" href="">Store</a></li></div>
+                    </ul> 
+                    <div class="col-md-7"></div>
+                    <ul>
+                        <div class="col-xs-1"><li><a class="links" href="">Gmail</a></li></div>
+                        <div class="col-xs-1"><li><a class="links" href="">Images</a></li></div>
+                        <div class="col-xs-1" id="app-image"><li><a class="links" href=""> <img class="image-responsive" title="Google apps" height="30em" src="images/google-apps.png" alt="google apps" ></a></li></div>
+                        <div><li><a><img src= ""></a></li></div>
+                    </ul>
+            </div>
         </nav>
       </header>
+<div id="main-body">
 <div id="image">
     <img alt="google" height="92" id="hplogo" class="img-responsive" 
     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 </div>
 <div id=search>
-    <form action=""><input type="text"></form>
+    <form action="" ><input id="search-bar" type="text"></form>
 </div>
-<div>
-    <button>
-        Google a Search
+<div id= "button-div">
+    <button id="search-button" class="btn btn-variant">
+        Google Search
     </button>
-    <button>
+    <button id="search-button" class="btn btn-variant">
         I'm Feeling lucky
     </button>
 </div>
+</div>
 </body>
-<footer>
+<footer id="footer", class="links">
+    <div class="row">
+        <nav id="lower-navbar" class="navbar navbar-expand-lg">
+            <ul>
+               
+                    <div class='col-md-1'><li><a class="links">Advertising</a></li></div>
+                    <div class='col-md-1'><li><a class="links">Business</a></li></div>
+                    <div class='col-md-2'><li><a class="links">How Search Works</a></li></div>
+            </ul>
+            <div class="col-md-5"></div>
+            <ul>                    
+                    <div class='col-md-1'><li><a class="links">Privacy</a></li></div>
+                    <div class='col-md-1'><li><a class="links">Terms</a></li></div>
+                    <div class='col-md-1'><li><a class="links">Settings</a></li></div>
+            </ul>
+        </nav>
+    </div>
     
 </footer>
