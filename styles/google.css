@@ -46,7 +46,8 @@ svg {
 }
 #image {
   flex: 1;
-  text-align: center
+  text-align: center;
+  padding: 40px;
 }
 #hplogo {
   display: inline-block
@@ -68,15 +69,21 @@ svg {
 }
 #search-image {
   width:60%;
-  color: #9aa0a6;
-  fill: currentColor;
+ 
 }
 #svg1 {
-  color: #9aa0a6;
+  
   fill: #9aa0a6
 }
-#svg-path1 {
-  color: #9aa0a6;
+#speach-holder {
+  float: right;
+  position:relative;
+  right: -5px;
+  top: -3px;
+  height:10px;
+}
+#speach-image {
+  height:25px;
 }
 #search-container {
   position:relative;
@@ -100,6 +107,9 @@ svg {
   #footer {
     background: #f2f2f2;
     vertical-align: middle;
+  }
+  #long-text{
+    white-space: nowrap;
   }
   .button-div {
     display: inline-block
@@ -146,5 +156,14 @@ svg {
   padding: 0px 0px 0px 27px;
   vertical-align: middle;
 }
-
- 
+.parent {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+ .parent > li {
+   display: inline-block;
+   width: 50%;
+   height: 100%;
+   
+ }
